@@ -48,12 +48,21 @@ html {
 
 a {
   color: var(--black);
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-right: 6em;
   text-decoration: none;
+  float: left;
+  font-weight: bold;
+}
+
+.number {
+  line-height: 2em;
+  font-size: 0.8em;
+  font-weight: normal;
 }
 
 .contact {
+  line-height: 0.9em;
   float: right;
   margin-right: 4em;
 }
@@ -72,12 +81,19 @@ a {
 }
 
 .sidebar {
+  display: grid;
   border: 1.1px solid var(--black);
   background: none;
   grid-column: 1/2;
   grid-row: 1/3;
+  justify-content: center;
+  align-content: flex-end;
 }
 
+.sidebar img {
+  width: 25px;
+  margin-bottom: 1.5em;
+}
 .main {
   display: grid;
 }
@@ -87,19 +103,29 @@ p {
 }
 
 h1 {
-  margin-left: 0;
   font-size: 4em;
+  margin-left: 0.1em;
+  text-decoration: underline;
 }
 
 .firstname {
-  color: var(--blue);
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  border: 4px solid var(--blue);
 }
 
 .lastname {
-  color: var(--red);
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  border: 4px solid var(--red);
 }
 
 .presentation {
-  margin-top: 18em;
-  margin-left: 10em;
+  line-height: 6em;
+  margin-top: 13em;
+  margin-left: 4em;
 }
