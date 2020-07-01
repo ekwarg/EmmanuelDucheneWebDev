@@ -9,14 +9,164 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--beige);
+  background-color: var(--white);
 }
 
 html {
   height: 100vh;
   font-family: "Futura";
+  overflow: hidden;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 70px calc(100vh - 140px) 70px;
+}
+
+/*Navigation*/
+.navbar {
+  position: relative;
+  display: grid;
+  grid-row: 1;
+  grid-column: 1/4;
+  grid-template-columns: 10vw 80vw 10vw;
+  height: 70px;
+  align-items: center;
+  border-bottom: 1px solid var(--black);
+}
+
+.logobox {
+  height: 70px;
+  grid-column: 1/2;
+}
+
+.logo {
+  width: 2.5em;
+  float: left;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.links {
+  display: grid;
+  position: relative;
+  grid-column: 1 / 4;
+  text-align: center;
+  display: none;
+}
+
+.navbar ul {
+  position: absolute;
+  align-content: center;
+  width: 100%;
+  border-top: 1px solid var(--black);
+}
+
+li {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  z-index: 100;
+  border-bottom: 1px solid var(--black);
+  grid-column: 3 / 4;
+}
+
+br {
+  display: none;
+}
+.number {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  grid-column: 3/4;
+  justify-self: right;
+  font-size: 1em;
+  margin-right: 1em;
+  grid-row: 1;
+}
+
+.material-icons {
+  font-size: 1.5em;
+  transform: scaleX(-1);
+}
+
+/*Main*/
+.main {
+  display: grid;
+  grid-row: 2/3;
+  grid-template-columns: 100vw;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 3em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-left: 0.1em;
+  text-decoration: underline;
+}
+
+.firstname {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  border: 4px solid var(--blue);
+}
+
+.lastname {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  border: 4px solid var(--red);
+}
+
+.presentation {
+  margin-top: 2.5em;
+  margin-left: 2em;
+}
+
+/*Footer*/
+.sidebar {
+  display: grid;
+
+  grid-column: 1/4;
+  width: 100vw;
+  height: 70px;
+  grid-row: 3;
+  align-items: center;
+  justify-content: right;
+  border-top: 1px solid var(--black);
+}
+
+#linkedin {
+  grid-row: 1;
+  width: 25px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+#instagram {
+  grid-row: 1;
+  width: 20px;
+  margin-right: 1em;
+}
+
+/*
 .container {
   display: grid;
   grid-template-columns: 6em auto;
@@ -193,3 +343,5 @@ h1 {
     font-size: 2.3em;
   }
 }
+
+*/

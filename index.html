@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<script src="https://use.fontawesome.com/fcbf396ce5.js"></script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       href="//db.onlinewebfonts.com/c/fd6e6c30c7d355528ba9428eea942445?family=Futura"
       rel="stylesheet"
       type="text/css"
     />
     <link rel="stylesheet" href="./main.css" />
+    <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,28 +28,43 @@
         <div class="logobox">
           <img src="./images/icon.png" alt="logo" class="logo" />
         </div>
-        <div class="links">
-          <a href=""
-            ><span class="number">1.</span><br />
-            Home</a
-          >
-          <a href=""
-            ><span class="number">2.</span><br />
-            Services</a
-          >
-          <a href=""
-            ><span class="number">3.</span><br />
-            Portfolio</a
-          >
-          <a href="" class="contact">
-            <br />
-            Contact</a
+        <div id="links" class="links">
+          <ul>
+            <li>
+              <a href=""
+                ><span class="number">1.</span><br />
+                Home</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="number">2.</span><br />
+                Services</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="number">3.</span><br />
+                Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="" class="contact">
+                <br />
+                Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><span class="material-icons">drag_handle</span></a
           >
         </div>
       </div>
       <div class="sidebar">
-        <img src="./images/linkedin.png" alt="linkedin" />
-        <img src="./images/instagram.png" alt="instagram" />
+        <img src="./images/linkedin.png" alt="linkedin" id="linkedin" />
+        <img src="./images/instagram.png" alt="instagram" id="instagram" />
       </div>
       <div class="main">
         <div class="presentation">
